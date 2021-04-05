@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    console.log("경로"+location);
+    console.log("경로"+location.pathname);
+    function moveTo() {
+        //상대경로
+        //assign은 히스토리에 저장이된다
+        //location.assign("8_BOM_history1.html")
+        //replace는 히스토리에 저장이 안된다
+        //location.replace("8_BOM_history1.html")
+        location.href="8_BOM_history1.html"
+    }
+</script>
+<body>
+    여기는 location
+    <input type="button" value="이동" onclick="moveTo()">
+</body>
+</html>
