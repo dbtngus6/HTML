@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload=function() {
+        var opt1=["에스프레소맛","다크초코","허브맛","감초맛","석류맛","우유맛","라떼맛","아몬드맛","딸기크레페맛","초코맛"]
+        var opt1_name=document.getElementById("opt1");
+        for(var i=0;i<opt1.length;i++)
+        {
+            opt1_name.innerHTML += "<option>"+opt1[i]+"</option>";
+        }
+        
+        var opt2=["쿠키","우유","과자","와플","아이스크림","초콜릿","사탕","시리얼","커피","주스"];
+        var opt2_name=document.getElementById("opt2");
+        for(var i=0;i<opt2.length;i++)
+        {
+            opt2_name.innerHTML += "<option>"+opt2[i]+"</option>";
+        }
+        var jbRandom=Math.floor(Math.random()*100);
+        document.name.random.value=jbRandom;
+    }
+</script>
+<body>
+    <form action="homework.jsp" name="name" method="get">
+        <select id="opt1" name="opt1">
+            <option>::opt1::</option>
+        </select>
+        <select id="opt2" name="opt2">
+            <option>::opt2::</option>
+        </select>
+        <input name="random" type="hidden" value="">
+        <input type="submit" value="생성">
+    </form>
+</body>
+</html>
