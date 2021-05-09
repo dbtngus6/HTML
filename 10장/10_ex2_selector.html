@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li {
+        list-style:none;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    /*window.onload = function() {
+
+    }*/
+    
+    /*$(document).ready(function(){
+        
+    });*/$
+
+    $(function(){
+        
+        /*var li_array = document.getElementsByTagName("li");
+        for(var i=0;i<li_array.length;i++) {
+            li_array[i].style.listStyle="none";
+        }*/ //이 코드를 밑의 jQuery를 사용해 쉽게 변경 가능
+        //태그 선택자
+        $("li").css("listStyle","none");
+        //클래스 선택자
+        $(".abc").css("color","#FF00FF");
+        //속성 선택자
+        $("[title]").css("text-decoration","underline");
+        $("[title = '2']").text("보우우우우하하하사사사");
+        //조건 - jQuery방식으로 태그들을 선택할 경우 무조건 jQuery함수만 사용가능
+        $("td,p").css("background-color","gray");
+    });
+</script>
+<body>
+    <ul>
+        <li>동해물과</li>
+        <li>백두산이</li>
+        <li class="abc">마르고</li>
+        <li class="def">닳도록</li>
+        <li title="1">하느님이</li>
+        <li title="2">보우하사</li>
+    </ul>
+    <p class="abc">
+        대한사람 대한으로
+    </p>
+    <table>
+        <tr>
+            <td>무궁화 삼천리 화려강산</td>
+        </tr>
+    </table>
+</body>
+</html>
